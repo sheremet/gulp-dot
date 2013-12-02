@@ -1,7 +1,7 @@
 gulp-dot
 ===
 
-[Gulp](https://github.com/wearefractal/gulp) plugin to ompile [doT.js](https://github.com/olado/doT) templates.
+[Gulp](https://github.com/wearefractal/gulp) plugin to compile [doT.js](https://github.com/olado/doT) templates.
 
 Install
 ---
@@ -37,7 +37,7 @@ License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2013 GoDaddy.com
+Copyright (c) 2013 Cyrus David
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
