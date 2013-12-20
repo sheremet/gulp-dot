@@ -10,8 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "dot": "~1.0.2",
-    "event-stream": "~3.0.16",
-    "gulp-util": "~1.0.0",
+    "event-stream": "~3.0.20",
+    "gulp-util": "~2.1.4",
     "glob": "~3.2.7"
   },
   "keywords": ["gulpplugin", "dot"]
