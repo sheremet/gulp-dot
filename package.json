@@ -1,7 +1,7 @@
 {
   "name": "gulp-dot",
   "description": "Gulp plugin to ompile doT.js templates.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "gulp-dot.js",
   "repository": {
     "type": "git",
