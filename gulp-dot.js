@@ -28,6 +28,11 @@ module.exports = function(config) {
     if (config.hasOwnProperty('layout')) {
       _.extend(config.def, {content: file.contents});
       str = fs.readFileSync(config.layout);
+
+      if ((new RegExp(config.layout)).test(file.path)) {
+        this.push(file);
+        return next();
+      }
     } else {
       str = file.contents;
     }
