@@ -6,6 +6,7 @@ module.exports = function(config) {
       gutil = require('gulp-util'),
       _ = require('lodash'),
       fs = require('fs'),
+      path = require('path'),
       Transform = stream.Transform,
       dot = new Transform({objectMode: true}),
       PluginError = gutil.PluginError;
@@ -29,7 +30,7 @@ module.exports = function(config) {
       _.extend(config.def, {content: file.contents});
       str = fs.readFileSync(config.layout);
 
-      if ((new RegExp(config.layout)).test(file.path)) {
+      if ((new RegExp(path.basename(config.layout))).test(file.path)) {
         this.push(file);
         return next();
       }
