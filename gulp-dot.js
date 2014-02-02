@@ -12,7 +12,7 @@ module.exports = function(config) {
       PluginError = gutil.PluginError;
 
   config = config || {};
-  _.extend(config, {it: {}, def: {}});
+  _.extend({it: {}, def: {}}, config);
 
   dot._transform = function(file, encoding, next) {
     var compiled, str;
