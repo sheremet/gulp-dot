@@ -14,6 +14,10 @@ module.exports = function(config) {
   config = config || {};
   _.extend({it: {}, def: {}}, config);
 
+  if('object' === typeof config.templateSettings) {
+    _.extend(doT.templateSettings, config.templateSettings);
+  }
+
   dot._transform = function(file, encoding, next) {
     var compiled, str;
 
