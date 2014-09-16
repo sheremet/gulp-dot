@@ -17,6 +17,9 @@ module.exports = function(config) {
   if('object' === typeof config.templateSettings) {
     _.extend(doT.templateSettings, config.templateSettings);
   }
+  if('string' !== typeof config.extension) {
+    config.extension = '.html';
+  }
 
   dot._transform = function(file, encoding, next) {
     var compiled, str;
@@ -47,7 +50,7 @@ module.exports = function(config) {
       null,
       config.def
     );
-    file.path = gutil.replaceExtension(file.path, '.html');
+    file.path = gutil.replaceExtension(file.path, config.extension);
     file.contents = new Buffer(compiled(config.it));
     this.push(file);
     next();
