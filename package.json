@@ -5,7 +5,7 @@
   "main": "gulp-dot.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vohof/gulp-dot.git"
+    "url": "git://github.com/sheremet/gulp-dot.git"
   },
   "license": "MIT",
   "dependencies": {
